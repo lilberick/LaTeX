@@ -1,0 +1,78 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc} %poder escribir tildes directamente
+\usepackage[spanish]{babel}
+\usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{amsmath, amsthm, amsfonts} %% Paquetes de la AMS
+\usepackage{mathptmx}%Parecido a New Times Roman
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{caption}									%Figure: texto -> Figure. texto
+\captionsetup[figure]{labelsep=period, format=plain}	%Figure: texto -> Figure. texto
+\usepackage{listings}
+\lstdefinestyle{PythonStyle}{
+	language=Python,
+	basicstyle=\small\ttfamily,
+	commentstyle=\color{magenta},
+	keywordstyle=\color{blue},
+	stringstyle=\color{red},
+	showstringspaces=false, % Evita mostrar los espacios en strings
+	numbers=none, %left,
+	numberstyle=\tiny\color{blue},
+	frame=single,
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=4
+}
+\title{Título}
+\author{LILBERICK}
+\date{9 de Octubre del 2023}
+\begin{document}
+\maketitle
+\section{INTRODUCCIÓN}
+\section{DEFINICIONES}
+\subsection{SUBTÍTULO}
+\subsubsection{SUBSUBTÍTULO}
+El texto lo escribes simplemente así.
+
+Así escribes otro párrafo.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{img/1.png}
+	\caption{descripcion}
+\end{figure}
+
+\begin{lstlisting}[style=PythonStyle]
+#codigo python
+for i in range(1, 10):
+	print(f"Hola Mundo {i}")
+\end{lstlisting}
+
+\begin{table}[htbp]
+	\begin{center}
+		\caption{Geox 8}
+		\begin{tabular}{|c|c|}
+			\hline
+			\textbf{Autonomía} & \textbf{Velocidad}\\
+			\hline
+			25 minutos & 100 Km/h\\
+			\hline
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{center}
+	\href{https://www.youtube.com/watch?v=Px4GHgnrj1A}{DescripcionVideo}
+\end{center}
+
+\pagebreak
+\section*{CONCLUSIONES}
+\begin{enumerate}
+	\item contenido
+\end{enumerate}
+\pagebreak
+\section*{REFERENCIAS}
+\begin{enumerate}
+	\item \href{www.google.com}{google}
+\end{enumerate}
+\end{document}
